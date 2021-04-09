@@ -1,14 +1,6 @@
 <html>  
 <head>  
 <style>
-.centered {
-  position: absolute;
-  left: 15%;
-  height: 100%;
-  width: 70%;
-  text-align: center;
-  background-color: hsl(180, 50%, 80%);
-}
   /* Style the submit button */
 input[type=submit] {
 background-color: #4CAF50;
@@ -26,24 +18,39 @@ width: 80%;;
 }
   /* Style the container for inputs */
 .container {
-  background-color: #f1f1f1;
-  padding: 20px;
+  position: absolute;
+  left: 15%;
+  height: 100%;
+  width: 70%;
+  text-align: center;
+  background-color: hsl(180, 50%, 80%);
 }
+/* Style all input fields */
+input {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
 </style>
 </head>  
 <body> 
-<div class="centered"> 
-  <div class="container">
+ <div class="container">
 <center>  
 <h1 style="color: 32A80F" align="center"> Welcome to Akansha's Page <br> </h1>
-<form action="https://akansha-singh7.github.io/web/">
-<label for="usrname">Username</label>
-<input type="text" id="usrname" name="usrname" required>
-<label for="psw">Password</label>
-<input type="password" id="psw" name="psw">
-<input onclick="window.location.href = 'https://akansha-singh7.github.io/web/';" type="submit" value="Submit"> 
+<form action="https://akansha-singh7.github.io/web/age_calculation.html">
+<label for="usrname" >Username:</label>
+<input type="text" id="usrname" pattern="12345" name="usrname" required>
+<br>
+<br>
+<label for="psw">Password:</label>
+<input type="password" id="psw" pattern="12345" name="psw">
+<input onclick="window.location.href = 'https://akansha-singh7.github.io/web/age_calculation.html';" type="submit" value="Submit"> 
 </center>  
-  </div>
 </div>
 </body>  
 </html>  
