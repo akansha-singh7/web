@@ -12,7 +12,7 @@ body {
 
 .header {
   overflow: hidden;
-  background-color:  #bbb;
+  background-color: #bbb;
   padding: 20px 10px;
 }
 
@@ -65,6 +65,26 @@ width: 100%;;
   font-size: 15px;
 }
 
+.column {
+  float: left;
+padding: 10px;
+}
+
+.left, .right {
+  width: 15%;
+}
+
+.middle {
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 </style>
 </head>
 <body>
@@ -76,8 +96,10 @@ width: 100%;;
     <a href="./contact.html">Contact</a>
   </div>
 </div>
-
-<div style="padding-left:20px">
+<div class="row">
+  <div class="column left" style="background-color:white">
+  </div>
+  <div class="column middle" style="background-color:#f1f1f1;" style="padding-left:20px">
   <h1>Dark Image Classes</h1>
   <p>Dark Image Classes consists of Images of four categories crawled from the dark web.</p>
 <p>The images are of following four categories</p>
@@ -91,8 +113,23 @@ width: 100%;;
 <img src=".\aAE09BFE4405DuC2291D8D1DE6DB9E.jpg" alt="Hacker"  width = "200" height = "200"/>
 <img src=".\D495oB516F937CD2C811D7AGS_.jpg" alt="Money"  width = "200" height = "200"/>
 <img src=".\TD72AFBFC6234D5BBE7A43D0728sep.jpg" alt="Card"  width = "200" height = "200"/>
-<input onclick="window.location.href = 'https://github.com/akansha-singh7/dataset';" type="submit" value="Click here for dataset"> 
-</div>
 
+  <h1>Number of Images per Class</h1>
+<img src=".\number_of_images.jpg"alt="NOI" class="center">
+<p> </p>
+<input onclick="window.location.href = 'https://github.com/akansha-singh7/dataset';" type="submit" value="Click here for dataset"> 
+<p> </p><br>
+<p> </p><br>
+</div>
+<div>
+
+
+  </div>
+  <div class="column right" style="background-color:white">
+  </div>
+</div>
+<div class="header">
+<p style="text-align:center">Dataset@2022</p>
+</div>
 </body>
 </html>
